@@ -17,7 +17,7 @@ def fetchall_dict(sql, params=None):
             return cur.fetchall()
 
 app = Flask(__name__)
-CORS(app, resources={r"/*": {"origins": ["http://localhost:3000"]}})
+CORS(app, resources={r"/*": {"origins": ["http://localhost:8000"]}})
 
 @app.get("/health")
 def health():
